@@ -6,9 +6,9 @@ jobs:
       script: ./test 
     - # stage name not required, will continue to use `test`
       script: ./test 
-      
-deploy:
-  skip_cleanup: true
+    - stage: deploy
+      script: ./deploy
+      if: type != pull_request
 
 python:
 
