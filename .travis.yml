@@ -8,7 +8,7 @@ jobs:
       script: ./test 
     - stage: deploy
       script: ./deploy
-      if: type != pull_request
+      if: branch = master
 
 python:
 
