@@ -8,7 +8,10 @@ jobs:
       script: ./test 
     - stage: deploy
       script: ./deploy
-      if: branch = master
+
+branches:
+  only:
+  - master
 
 python:
 
