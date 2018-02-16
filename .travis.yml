@@ -2,6 +2,8 @@ language: python
 
 jobs:
   include:
+    - stage: build
+      script./test
     - stage: test
       script: ./test 
     - # stage name not required, will continue to use `test`
