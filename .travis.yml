@@ -6,8 +6,9 @@ jobs:
       script: ./test 
     - # stage name not required, will continue to use `test`
       script: ./test 
-    - stage: deploy
-      script: ./deploy
+      
+deploy:
+  skip_cleanup: true
 
 python:
 
